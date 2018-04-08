@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+
+	<ul class="banImgs">
+		<p></p>
+		<p></p>
+		<p></p>
+		<li style="display: block"><a target="_blank" href="http://www.chinapnr.com/news/15490.html">1</a></li>
+		<li><a target="_blank" href="/about/">2</a></li>
+		<li><a target="_blank" href="/product/zichanjiaoyi.html">3</a></li>
+		<li><a target="_blank" href="/product/jijinwaibao.html">4</a></li>
+		<li><a target="_blank" href="/product/caifuguanli.html">5</a></li>
+		<li><a target="_blank" href="http://v.qq.com/page/w/n/q/w0313vft7nq.html">6</a></li>
+		
+	</ul>
+	
+	<script type="text/javascript">
+		$(function() {
+			/* var $_li =  $(".banImgs").children("li");
+			$.each($_li,function (index, rows){
+				var $_a = $(rows).children("a:eq(0)");
+				var $_href = $_a.attr("href");
+				if($_href.indexOf("http://www.chinapnr.com/news/15490.html") > -1){
+					$_a.attr("href","/product/caifuguanli.html");
+				}
+				if($_href.indexOf("/about/") > -1){
+					$_a.attr("href","/product/jijinwaibao.html");
+				}	
+			}); */
+			var $href = $("[href]");
+			console.log($href);
+		});
+	</script>
+
+	<!-- <div class="leftNav">
+
+		<ul>
+			<li class="l1"><a href="/about/index.html" class="current">公司简介</a></li>
+			<li class="l1"><a href="/about/speech.htm">总裁致辞</a></li>
+			<li class="l1"><a href="/about/responsibility.html">社会责任</a></li>
+			<li class="l1"><a href="/about/news/">新闻中心</a>
+			<li class="l1"><a href="/about/jobs.html">招贤纳士</a></li>
+			<li class="l1"><a href="/about/contact.html">联系我们</a></li>
+
+		</ul>
+
+		<script type="text/javascript">
+			$(function() {
+				$(".leftNav .l1").mouseenter(function() {
+					$(this).find(".l2").show();
+				}).mouseleave(function() {
+					$(this).find(".l2").hide();
+				});
+				
+				
+				var responsibility = $(".leftNav .l1").get(2);
+				var content = $(".leftNav .l1:nth-child(3)>a").html();
+				if(content == "社会责任"){
+					responsibility.remove();
+				}
+			});
+			
+			
+		</script>
+	
+	
+	</div> -->
+</body>
+</html>

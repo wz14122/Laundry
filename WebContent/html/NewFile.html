@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+
+	<div class="subBanner">
+		<div class="subBann">
+			<img src="/images/upload/model/about.jpg" width='1900' height='200'/>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			var title = $(".chTit").html();
+			
+			var img = $(".subBanner .subBann>img");
+			if(img.attr("src") == "/images/upload/model/about.jpg"){
+				img.attr("src","/resources/commons/about.jpg")
+			}
+		})
+	</script>
+</body>
+</html>

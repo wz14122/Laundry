@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+	<div class="jsNav" id="jsNav">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<a>s</a>
+		<a>ddd</a>
+		<a>fff</a>
+		<a>ggg</a>
+		<a>gg</a>
+		<a>hhh</a>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			$("#jsNav>div").get(4).remove();
+			$("#jsNav>div").get(4).remove();
+			$("#jsNav>div").get(4).remove();
+			$("#jsNav>a").get(4).remove();
+			$("#jsNav>a").get(4).remove();
+			$("#jsNav>a:nth-child(4)").css("display","none");
+		});
+	</script>
+</body>
+</html>
